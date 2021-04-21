@@ -17,7 +17,7 @@
     <button type="button" style="width:100px; height:20px; color: red;" onclick="change()" value="Change Text inside" name="btn" >Change Text</button>
 <a href="http://www.google.com" target="_blank">Go to Google</a>
 <br>
-<img src="images/hello.png" width="200" height="100" alt="Hello World">
+<img src="images/hello.png" width="200" height="100" alt="Hello World" onmouseover="javascript:alert('Mouse is on the image')">
 
 <table>
     <tr>
@@ -73,9 +73,9 @@
 
 <!-- <iframe src="first.html" title="HTML File"></iframe> -->
 <div class="myform">
-  <form action="http://localhost/form.php" method="POST">
-    <p><label>Name</label>: <input type="text" name="username"></p>
-    <p>Mobile: <input type="text" name="mobile"></p>
+  <form action="http://localhost/form.php" method="POST" onsubmit="return submitForm()">
+    <p><label>Name</label>: <input type="text" id="username" name="username" onblur="blur_name()"></p>
+    <p>Mobile: <input type="text" name="mobile" value="909090909090" onchange="onchange_mobile(this.value)"></p>
     <p>City: <input type="text" name="city"></p>
     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
   <label for="vehicle1"> I have a bike</label><br>
@@ -83,7 +83,7 @@
   <label for="vehicle2"> I have a car</label><br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
   <label for="vehicle3"> I have a boat</label><br><br>
-  <textarea name="biography" rows="4" cols="40"></textarea>
+  <textarea name="biography" rows="4" cols="40" onkeypress="handle_input_length(this)"></textarea>
     <br>
     <select name = "dropdown" id="dropdown" multiple>
       <option value = "Maths" selected>Maths</option>
