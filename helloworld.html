@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Introduction</title>
+<link href="styles.css" rel="stylesheet" />
+<script src="script.js"></script>
+<style>
+  p {
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+<h1>Hi!</h1>
+<p id="helloworld" class="hello">Hello World</p>
+<p id="morning" class="hello">Good morning!</p>
+    Name: <input type="text" id="name" value="html">
+    <button type="button" style="width:100px; height:20px; color: red;" onclick="change()" value="Change Text inside" name="btn" >Change Text</button>
+<a href="http://www.google.com" target="_blank">Go to Google</a>
+<br>
+<img src="images/hello.png" width="200" height="100" alt="Hello World" onmouseover="javascript:alert('Mouse is on the image')">
+
+<table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+  </table>
+
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+  </ul>
+
+  <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+<input type="file" name="upload_file" id="upload_file">
+
+<script>
+    // function change() {
+    //     console.log("Button clicked");
+    //     document.getElementById('helloworld').innerHTML = 'Hello JavaScript';
+    //     document.getElementById('name').value = 'Hello JavaScript';
+    //     return false;
+    // }
+</script>
+
+<!-- <iframe src="first.html" title="HTML File"></iframe> -->
+<div class="myform">
+  <form action="http://localhost/form.php" method="POST" onsubmit="return submitForm()">
+    <p><label>Name</label>: <input type="text" id="username" name="username" onblur="blur_name()"></p>
+    <p>Mobile: <input type="text" name="mobile" value="909090909090" onchange="onchange_mobile(this.value)"></p>
+    <p>City: <input type="text" name="city"></p>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <textarea name="biography" rows="4" cols="40" onkeypress="handle_input_length(this)"></textarea>
+    <br>
+    <select name = "dropdown" id="dropdown" multiple>
+      <option value = "Maths" selected>Maths</option>
+      <option value = "Physics">Physics</option>
+      <option value = "Chemistry">Chemistry</option>
+   </select>
+    <input type="submit" name="submit_btn">
+  </form>
+</div>
+
+</body>
+</html>
