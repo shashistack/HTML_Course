@@ -3,11 +3,11 @@
     <title>HTML Tags</title>
     <link href="styles.css" rel="stylesheet" />
     <script src="script.js"></script>
-    <style>
+    <!-- <style>
       p {
         padding: 5px;
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <!-- Heading Tag -->
@@ -26,7 +26,8 @@
 
     <!-- Input Text element -->
     <p>
-      <label>Name:</label> <input type="text" id="name" value="Ramesh" />
+      <label>Name:</label>
+      <input type="text" id="name" value="Ramesh" />
 
       <!-- Input File element -->
       <input type="file" name="upload_file" id="upload_file" />
@@ -55,7 +56,7 @@
 
     <!-- Anchor Tag -->
     <p><a href="http://www.google.com" target="_blank">Go to Google</a></p>
-    <br />
+    <br /><br />
     <!-- Break Line -->
 
     <!-- Image Tag inside a Div-->
@@ -73,7 +74,7 @@
     <!-- Table inside a Div -->
     <p><b>Table:</b></p>
     <div id="table_container">
-      <table id="simple_table">
+      <table id="simple_table" name="simple_table">
         <tr>
           <th>Company</th>
           <th>Contact</th>
@@ -165,7 +166,7 @@
         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
         <label for="vehicle3"> boat</label><br /><br />
         <textarea
-          placeholder="About myself"
+          placeholder="Write something about yourself"
           name="biography"
           rows="4"
           cols="40"
@@ -178,10 +179,10 @@
               <label>I can speak:</label>
             </td>
             <td>
-              <select name="languages" id="lang_dropdown" multiple>
-                <option value="Telugu" selected>Telugu</option>
-                <option value="Hindi">Hindi</option>
-                <option value="English">English</option>
+              <select name="languages" id="lang_dropdown">
+                <option value="tel" selected>Telugu</option>
+                <option value="hin">Hindi</option>
+                <option value="eng">English</option>
               </select>
             </td>
           </tr>

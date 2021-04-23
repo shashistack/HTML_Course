@@ -1,4 +1,5 @@
 function submitForm() {
+  // validation for name field
   if (document.getElementById("username").value == "") {
     alert("Please enter name");
     document.getElementById("username").focus();

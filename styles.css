@@ -7,6 +7,9 @@
 .hello {
   font-size: 20px;
 }
+input[type="button"] {
+  color: green;
+}
 #simple_table {
   width: 400px;
   height: 200px;
