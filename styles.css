@@ -1,5 +1,12 @@
+body {
+  background-color: lightblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  padding: 5px;
+}
 #helloworld {
-  color: green;
+  color: #ff5722;
 }
 #morning {
   color: red;
@@ -10,15 +17,15 @@
 input[type="button"] {
   color: green;
 }
+table {
+  font-size: 15px;
+}
 #simple_table {
   width: 400px;
   height: 200px;
-}
-#contact_form {
-  width: 400px;
   border: 1px solid green;
 }
-#simple_table {
+#contact_form {
   width: 400px;
   border: 1px solid green;
 }
