@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>HTML Tags</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Heading Tag -->
+    <h1>Hi!</h1>
+
+    <!-- Div -->
+    <div id="div2">
+      Hello, this content is inside a Div element with id: div1
+    </div>
+
+    <div
+      id="para_div"
+      style="border: 1px solid red; width: 500px; height: 300px"
+    >
+      <p id="helloworld" class="hello">
+        Hello World Hello World Hello World Hello WorldHello WorldHello World
+        Hello World Hello World Hello WorldHello World Hello WorldHello
+        WorldHello World Hello World Hello World Hello World Hello World Hello
+        World Hello World Hello World Hello World Hello World Hello World Hello
+        WorldHello World
+      </p>
+      <p id="morning" class="hello">Good morning!</p>
+    </div>
+
+    <div id="table_container">
+      <table id="simple_table" name="simple_table">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="myform">
+      <form
+        id="contact_form"
+        action="http://localhost/form.php"
+        method="POST"
+        onsubmit="return submitForm()"
+        autocomplete="off"
+      >
+        <p><b>Enter your information</b></p>
+        <p>
+          <label>Name</label>:
+          <input
+            type="text"
+            id="username"
+            name="username"
+            onblur="blur_name()"
+          />
+        </p>
+        <p>
+          Mobile:
+          <input
+            type="text"
+            name="mobile"
+            value="909090909090"
+            onchange="onchange_mobile(this.value)"
+          />
+        </p>
+
+        <input type="submit" id="submit_btn" name="submit_btn" />
+      </form>
+    </div>
+  </body>
+</html>

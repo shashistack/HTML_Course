@@ -1,15 +1,23 @@
 body {
   background-color: lightblue;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+}
+#div2 {
+  width: 200px;
 }
 p {
   padding: 5px;
 }
 #helloworld {
   color: #ff5722;
+  float: none;
+  z-index: auto;
+  float: left;
+  width: 300px;
 }
 #morning {
   color: red;
+  float: right;
 }
 .hello {
   font-size: 20px;
@@ -20,6 +28,12 @@ input[type="button"] {
 table {
   font-size: 15px;
 }
+/* table th {
+  color: red;
+} */
+#simple_table th {
+  color: red;
+}
 #simple_table {
   width: 400px;
   height: 200px;
@@ -28,4 +42,10 @@ table {
 #contact_form {
   width: 400px;
   border: 1px solid green;
+}
+#submit_btn {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  color: beige;
+  background-color: blue;
 }
