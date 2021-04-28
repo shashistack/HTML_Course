@@ -5,6 +5,11 @@ function submitForm() {
     document.getElementById("username").focus();
     return false;
   }
+  if (document.getElementById("city").value == "") {
+    alert("Please enter city");
+    document.getElementById("city").focus();
+    return false;
+  }
   return true;
 }
 

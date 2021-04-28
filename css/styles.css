@@ -17,13 +17,17 @@ p {
 }
 #morning {
   color: red;
-  float: right;
+  /* float: right; */
 }
 .hello {
   font-size: 20px;
 }
 input[type="button"] {
   color: green;
+}
+#table_container {
+  width: 400px;
+  border: 1px solid blue;
 }
 table {
   font-size: 15px;
@@ -34,6 +38,15 @@ table {
 #simple_table th {
   color: red;
 }
+#simple_table td {
+  border: 1px solid grey;
+}
+/* .third_column {
+  color: green;
+} */
+#simple_table td:nth-child(1) {
+  color: green;
+}
 #simple_table {
   width: 400px;
   height: 200px;
@@ -42,10 +55,35 @@ table {
 #contact_form {
   width: 400px;
   border: 1px solid green;
+  background-color: chocolate;
+  background-image: url("../images/hello.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+#contact_form input[type="text"] {
+  width: 200px;
+  height: 30px;
 }
 #submit_btn {
   margin-left: 100px;
   margin-bottom: 20px;
   color: beige;
   background-color: blue;
+  text-align: center;
+}
+#lists {
+  width: 200px;
+  border: 1px solid blue;
+}
+#lists ul li {
+  color: red;
+}
+
+#lists ul li:nth-child(1) {
+  color: yellow;
+}
+
+#lists ol li {
+  color: green;
 }
