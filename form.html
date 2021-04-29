@@ -29,20 +29,22 @@
           <input
             type="text"
             name="mobile"
-            value="909090909090"
+            id="mobile_no"
+            placeholder="909090909090"
             onchange="onchange_mobile(this.value)"
           />
         </p>
         <p>City: <input type="text" name="city" id="city" /></p>
         <span>I have a </span><br />
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <input type="checkbox" id="vehicle1" name="vehicle" value="Bike" />
         <label for="vehicle1"> bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <input type="checkbox" id="vehicle2" name="vehicle" value="Car" />
         <label for="vehicle2"> car</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <input type="checkbox" id="vehicle3" name="vehicle" value="Boat" />
         <label for="vehicle3"> boat</label><br /><br />
         <textarea
           placeholder="Write something about yourself"
+          id="biography"
           name="biography"
           rows="4"
           cols="40"
@@ -56,7 +58,8 @@
             </td>
             <td>
               <select name="languages" id="lang_dropdown">
-                <option value="tel" selected>Telugu</option>
+                <option value="">Select</option>
+                <option value="tel">Telugu</option>
                 <option value="hin">Hindi</option>
                 <option value="eng">English</option>
               </select>
