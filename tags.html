@@ -11,27 +11,38 @@
   </head>
   <body>
     <!-- Heading Tag -->
-    <h3>Hi!</h3>
+    <h3>Hi! This is coming from a H3 tag</h3>
 
     <!-- Div -->
     <div id="div2">
       Hello, this content is inside a Div element with id: div1
     </div>
 
-    <!-- Paragraph Tag -->
-    <p id="helloworld" class="hello">Hello World</p>
+    <div id="paras">
+      <!-- Paragraph Tag -->
+      <p><b>Paragraphs:</b></p>
+      <p id="helloworld" class="hello">Hello World</p>
 
-    <!-- Another paragraph tag with same class, but different id -->
-    <p id="morning" class="hello">Good morning!</p>
+      <!-- Another paragraph tag with same class, but different id -->
+      <p id="morning" class="hello">
+        Good morning! This is a paragraph that is somewhat bigger, and contains
+        many words.
+      </p>
+    </div>
 
-    <!-- Input Text element -->
-    <p>
+    <!-- Input elements -->
+    <div id="input_fields">
+      <p><b>Some Input Fields:</b></p>
       <label>Name:</label>
       <input type="text" id="name" name="name" value="Ramesh" />
-
+      <br />
       <!-- Input File element -->
-      <input type="file" name="upload_file" id="upload_file" />
+      <p>
+        <label>Select File:</label>
+        <input type="file" name="upload_file" id="upload_file" />
+      </p>
 
+      <p><b>Buttons:</b></p>
       <!-- First Button element -->
       <input
         type="button"
@@ -52,12 +63,15 @@
       >
         Change Name
       </button>
-    </p>
+    </div>
 
     <!-- Anchor Tag -->
-    <p><a href="http://www.google.com" target="_blank">Go to Google</a></p>
-    <br /><br />
-    <!-- Break Line -->
+    <div id="anchor">
+      <p>
+        <a href="http://www.google.com" target="_blank">Link to Go to Google</a>
+      </p>
+    </div>
+    <br /><!-- Break Line -->
 
     <!-- Image Tag inside a Div-->
     <div id="img">
@@ -101,6 +115,7 @@
     <!-- Lists -->
     <p><b>Lists:</b></p>
     <div id="lists">
+      <p><b>Unordered List:</b></p>
       <ul>
         <li>First Item</li>
         <li>Second Item</li>
@@ -108,6 +123,7 @@
         <li>Fourth Item</li>
       </ul>
       <br />
+      <p><b>Ordered List:</b></p>
       <ol>
         <li>Coffee</li>
         <li>Tea</li>
@@ -210,7 +226,7 @@
             </td>
           </tr>
         </table>
-        <input type="submit" name="submit_btn" />
+        <input type="submit" name="submit_btn" id="submit_btn" />
         <input
           type="reset"
           id="reset_btn"

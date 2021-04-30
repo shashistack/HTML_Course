@@ -8,25 +8,33 @@ body {
 #div2 {
   width: 200px;
 }
+#paras {
+  float: left;
+  border: 2px dotted green;
+  margin: 10px;
+}
 p {
   padding: 5px;
 }
 #helloworld {
   color: #ff5722;
-  float: none;
   z-index: auto;
   float: left;
   width: 300px;
 }
 #morning {
   color: red;
-  /* float: right; */
+  float: right;
+  width: 300px;
 }
 .hello {
   font-size: 20px;
 }
 input[type="reset"] {
   color: green;
+}
+#input_fields {
+  width: 300px;
 }
 #table_container {
   width: 400px;
@@ -56,13 +64,14 @@ table {
   border: 1px solid green;
 }
 #contact_form {
-  width: 400px;
+  width: 500px;
+  padding: 10px;
   border: 1px solid green;
   background-color: chocolate;
   background-image: url("../images/hello.jpg");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 80px;
 }
 #contact_form input[type="text"] {
   width: 200px;
@@ -76,7 +85,7 @@ table {
   color: beige;
   background-color: blue;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 #lists {
   width: 200px;
@@ -84,12 +93,14 @@ table {
 }
 #lists ul li {
   color: red;
+  padding: 2px;
 }
 
 #lists ul li:nth-child(1) {
-  color: yellow;
+  color: darkblue;
 }
 
 #lists ol li {
   color: green;
+  padding: 2px;
 }
