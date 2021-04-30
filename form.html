@@ -21,9 +21,20 @@
             type="text"
             id="username"
             name="username"
+            maxlength="30"
             onblur="blur_name()"
           />
         </p>
+        <p>
+          <label>Password</label>:
+          <input type="password" id="pwd" name="pwd" />
+        </p>
+        <input
+          type="hidden"
+          id="form_name"
+          name="form_name"
+          value="contact_form"
+        />
         <p>
           Mobile:
           <input
@@ -57,7 +68,7 @@
               <label>I can speak:</label>
             </td>
             <td>
-              <select name="languages" id="lang_dropdown">
+              <select name="languages" id="lang_dropdown" multiple>
                 <option value="">Select</option>
                 <option value="tel">Telugu</option>
                 <option value="hin">Hindi</option>
@@ -90,6 +101,12 @@
           </tr>
         </table>
         <input type="submit" name="submit_btn" id="submit_btn" />
+        <input
+          type="reset"
+          id="reset_btn"
+          name="reset_btn"
+          value="Reset Form"
+        />
       </form>
     </div>
   </body>
