@@ -57,3 +57,8 @@ function changeParagraphText() {
 function onchange_mobile(mobile_number) {
   console.log(mobile_number);
 }
+
+function click_btn() {
+  console.log('Button is clicked');
+  return false;
+}

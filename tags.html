@@ -1,239 +1,191 @@
 <html>
-  <head>
-    <title>HTML Tags</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="js/script.js"></script>
-    <!-- <style>
+
+<head>
+  <title>HTML Tags</title>
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="js/script.js"></script>
+  <!-- <style>
       p {
         padding: 5px;
       }
     </style> -->
-  </head>
-  <body>
-    <!-- Heading Tag -->
-    <h3>Hi! This is coming from a H3 tag</h3>
+</head>
 
-    <!-- Div -->
-    <div id="div2">
-      Hello, this content is inside a Div element with id: div1
-    </div>
+<body>
+  <!-- Heading Tag -->
+  <h3>Hi! This is coming from a H3 tag</h3>
 
-    <div id="paras">
-      <!-- Paragraph Tag -->
-      <p><b>Paragraphs:</b></p>
-      <p id="helloworld" class="hello">Hello World</p>
+  <!-- Div -->
+  <div id="div2">
+    Hello, this content is inside a Div element with id: div1
+  </div>
 
-      <!-- Another paragraph tag with same class, but different id -->
-      <p id="morning" class="hello">
-        Good morning! This is a paragraph that is somewhat bigger, and contains
-        many words.
-      </p>
-    </div>
+  <div id="paras">
+    <!-- Paragraph Tag -->
+    <p><b>Paragraphs:</b></p>
+    <p id="helloworld" class="hello">Hello World</p>
 
-    <!-- Input elements -->
-    <div id="input_fields">
-      <p><b>Some Input Fields:</b></p>
-      <label>Name:</label>
-      <input type="text" id="name" name="name" value="Ramesh" />
-      <br />
-      <!-- Input File element -->
-      <p>
-        <label>Select File:</label>
-        <input type="file" name="upload_file" id="upload_file" />
-      </p>
+    <!-- Another paragraph tag with same class, but different id -->
+    <p id="morning" class="hello">
+      Good morning! This is a paragraph that is somewhat bigger, and contains
+      many words.
+    </p>
+  </div>
 
-      <p><b>Buttons:</b></p>
-      <!-- First Button element -->
-      <input
-        type="button"
-        id="btn1"
-        style="width: 200px; height: 30px; color: blue"
-        onclick="changeParagraphText()"
-        value="Change Paragraph Text"
-      />
+  <!-- Input elements -->
+  <div id="input_fields">
+    <p><b>Some Input Fields:</b></p>
+    <label>Name:</label>
+    <input type="text" id="name" name="name" value="Ramesh" />
+    <br />
+    <!-- Input File element -->
+    <p>
+      <label>Select File:</label>
+      <input type="file" name="upload_file" id="upload_file" />
+    </p>
 
-      <!-- Second Button element -->
-      <button
-        type="button"
-        id="btn2"
-        style="width: 150px; height: 30px; color: red"
-        onclick="changeName()"
-        value="Change Text inside"
-        name="btn2"
-      >
-        Change Name
-      </button>
-    </div>
+    <p><b>Buttons:</b></p>
+    <!-- First Button element -->
+    <input type="button" id="btn1" style="width: 200px; height: 30px; color: blue" onclick="changeParagraphText()"
+      value="Change Paragraph Text" />
 
-    <!-- Anchor Tag -->
-    <div id="anchor">
-      <p>
-        <a href="http://www.google.com" target="_blank">Link to Go to Google</a>
-      </p>
-    </div>
-    <br /><!-- Break Line -->
+    <!-- Second Button element -->
+    <button type="button" id="btn2" style="width: 150px; height: 30px; color: red" onclick="changeName()"
+      value="Change Text inside" name="btn2">
+      Change Name
+    </button>
+  </div>
 
-    <!-- Image Tag inside a Div-->
-    <div id="img">
-      <p><b>Image:</b></p>
-      <img
-        src="images/hello.jpg"
-        width="200"
-        height="200"
-        alt="Hello World"
-        onmouseover="javascript:console.log('Mouse is on the image')"
-      />
-    </div>
+  <!-- Anchor Tag -->
+  <div id="anchor">
+    <p>
+      <a href="http://www.google.com" target="_blank">Link to Go to Google</a>
+    </p>
+  </div>
+  <br /><!-- Break Line -->
 
-    <!-- Table inside a Div -->
-    <p><b>Table:</b></p>
-    <div id="table_container">
-      <table id="simple_table" name="simple_table">
-        <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-        </tr>
-      </table>
-    </div>
+  <!-- Image Tag inside a Div-->
+  <div id="img">
+    <p><b>Image:</b></p>
+    <img src="images/hello.jpg" width="200" height="200" alt="Hello World"
+      onmouseover="console.log('Mouse is on the image')" />
+  </div>
 
-    <!-- Lists -->
-    <p><b>Lists:</b></p>
-    <div id="lists">
-      <p><b>Unordered List:</b></p>
-      <ul>
-        <li>First Item</li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-        <li>Fourth Item</li>
-      </ul>
-      <br />
-      <p><b>Ordered List:</b></p>
-      <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ol>
-    </div>
+  <!-- Table inside a Div -->
+  <p><b>Table:</b></p>
+  <div id="table_container">
+    <table id="simple_table" name="simple_table">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+    </table>
+  </div>
 
-    <!-- Adding javascript inside same file, not recommended -->
-    <!-- <script>
+  <!-- Lists -->
+  <p><b>Lists:</b></p>
+  <div id="lists">
+    <p><b>Unordered List:</b></p>
+    <ul>
+      <li>First Item</li>
+      <li style="color:brown;">Second Item</li>
+      <li>Third Item</li>
+      <li>Fourth Item</li>
+    </ul>
+    <br />
+    <p><b>Ordered List:</b></p>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+  </div>
+
+  <!-- Adding javascript inside same file, not recommended -->
+  <!-- <script>
       function changeName() {
         document.getElementById("name").value = "New Name";
       }
     </script> -->
 
-    <!-- Iframe -->
-    <p><b>Iframe:</b></p>
-    <div id="iframe_content">
-      <iframe src="first.html" title="HTML File"></iframe>
-    </div>
+  <!-- Iframe -->
+  <p><b>Iframe:</b></p>
+  <div id="iframe_content">
+    <iframe src="first.html" title="HTML File"></iframe>
+  </div>
 
-    <!-- Form -->
-    <p><b>Contact Form:</b></p>
-    <div class="myform">
-      <form
-        id="contact_form"
-        action="http://localhost/form.php"
-        method="POST"
-        onsubmit="return submitForm()"
-        autocomplete="off"
-      >
-        <p><b>Enter your information</b></p>
-        <p>
-          <label>Name</label>:
-          <input
-            type="text"
-            id="username"
-            name="username"
-            onblur="blur_name()"
-          />
-        </p>
-        <p>
-          Mobile:
-          <input
-            type="text"
-            name="mobile"
-            value="909090909090"
-            onchange="onchange_mobile(this.value)"
-          />
-        </p>
-        <p>City: <input type="text" name="city" /></p>
-        <span>I have a </span><br />
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1"> bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2"> car</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3"> boat</label><br /><br />
-        <textarea
-          placeholder="Write something about yourself"
-          name="biography"
-          rows="4"
-          cols="40"
-          onkeypress="handle_input_length(this)"
-        ></textarea>
-        <br />
-        <table id="inside_form">
-          <tr>
-            <td>
-              <label>I can speak:</label>
-            </td>
-            <td>
-              <select name="languages" id="lang_dropdown">
-                <option value="tel" selected>Telugu</option>
-                <option value="hin">Hindi</option>
-                <option value="eng">English</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label>I want to learn:</label>
-            </td>
-            <td>
-              <input type="radio" id="tamil" name="language" value="Tamil" />
-              <label for="tamil">Tamil</label><br />
-              <input
-                type="radio"
-                id="kannada"
-                name="language"
-                value="Kannada"
-              />
-              <label for="kannada">Kannada</label><br />
-              <input
-                type="radio"
-                id="malayalam"
-                name="language"
-                value="malayalam"
-              />
-              <label for="malayalam">Malayalam</label>
-            </td>
-          </tr>
-        </table>
-        <input type="submit" name="submit_btn" id="submit_btn" />
-        <input
-          type="reset"
-          id="reset_btn"
-          name="reset_btn"
-          value="Reset Form"
-        />
-      </form>
-    </div>
-  </body>
+  <!-- Form -->
+  <p><b>Contact Form:</b></p>
+  <div class="myform">
+    <form id="contact_form" action="http://localhost/form.php" method="POST" onsubmit="return submitForm()"
+      autocomplete="off">
+      <p><b>Enter your information</b></p>
+      <p>
+        <label>Name</label>:
+        <input type="text" id="username" name="username" onblur="blur_name()" />
+      </p>
+      <p>
+        Mobile:
+        <input type="text" name="mobile" value="909090909090" onchange="onchange_mobile(this.value)" />
+      </p>
+      <p>City: <input type="text" name="city" /></p>
+      <span>I have a </span><br />
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> boat</label><br /><br />
+      <textarea placeholder="Write something about yourself" name="biography" rows="4" cols="40"
+        onkeypress="handle_input_length(this)"></textarea>
+      <br />
+      <table id="inside_form">
+        <tr>
+          <td>
+            <label>I can speak:</label>
+          </td>
+          <td>
+            <select name="languages" id="lang_dropdown">
+              <option value="tel" selected>Telugu</option>
+              <option value="hin">Hindi</option>
+              <option value="eng">English</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>I want to learn:</label>
+          </td>
+          <td>
+            <input type="radio" id="tamil" name="language" value="Tamil" />
+            <label for="tamil">Tamil</label><br />
+            <input type="radio" id="kannada" name="language" value="Kannada" />
+            <label for="kannada">Kannada</label><br />
+            <input type="radio" id="malayalam" name="language" value="malayalam" />
+            <label for="malayalam">Malayalam</label>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" name="submit_btn" id="submit_btn" />
+      <input type="reset" id="reset_btn" name="reset_btn" value="Reset Form" />
+    </form>
+  </div>
+</body>
+
 </html>
