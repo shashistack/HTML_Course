@@ -6,7 +6,8 @@
   <script src="js/script.js"></script>
 </head>
 
-<body onload="alert('Hello Form')">
+<body onload="console.log('Hello everyone, the body is loaded')">
+  <!-- better to move logic to a separate function, instead of handling events inline -->
   <h1>HTML Form</h1>
   <div class="myform">
     <form id="contact_form" action="http://localhost/form.php" method="POST" onsubmit="return submitForm()"

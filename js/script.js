@@ -46,6 +46,10 @@ function submitForm() {
   return true;
 }
 
+function blur_name() {
+  console.log("Name field has lost focus");
+}
+
 function changeName() {
   document.getElementById("name").value = "Suresh";
 }
